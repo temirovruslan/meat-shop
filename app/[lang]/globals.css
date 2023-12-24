@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper {
+  max-width: 1250px;
+  padding: 0 25px 0 25px;
+  margin: auto;
+}
