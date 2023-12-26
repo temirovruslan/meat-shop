@@ -9,7 +9,7 @@ import est from '@/public/est.png'
 import { i18n } from '@/i18n.config'
 
 import Image, { StaticImageData } from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const flagImages: { [key: string]: StaticImageData } = {
   en: eng,
@@ -22,17 +22,20 @@ export default function LocaleSwitcher() {
   const pathName = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedLocale, setSelectedLocale] = useState(() => {
-    // Retrieve the selected language from localStorage or default to 'en'
-    return localStorage.getItem('selectedLocale') || 'en';
+    // Check if window is defined before accessing localStorage
+    return typeof window !== 'undefined'
+      ? localStorage.getItem('selectedLocale') || 'en'
+      : 'en';
   });
 
   const handleChangeLocale = (locale: string) => {
-    if (locale !== selectedLocale) {
-      // Save the selected language to localStorage
+    if (typeof window !== 'undefined') {
+      // Check if window is defined before accessing localStorage
       localStorage.setItem('selectedLocale', locale);
-      setSelectedLocale(locale);
-      // You can perform any additional actions when the locale changes here
     }
+
+    setSelectedLocale(locale);
+    // You can perform any additional actions when the locale changes here
     setIsDropdownOpen(false);
   };
 
@@ -43,6 +46,12 @@ export default function LocaleSwitcher() {
     return segments.join('/');
   };
 
+  useEffect(() => {
+    // Cleanup dropdown state when component unmounts
+    return () => {
+      setIsDropdownOpen(false);
+    };
+  }, []);
   return (
     <div className='flex gap-x-3 relative'>
       <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className=''>
