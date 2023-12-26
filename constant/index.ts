@@ -53,6 +53,7 @@ export const beef: lambType[] = [
     image: img_7.src
   },
   {
+    sale: 90,
     price: 15,
     name: 'Beef Chunk',
     image: img_8.src

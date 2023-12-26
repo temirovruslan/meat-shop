@@ -12,11 +12,14 @@ const BeefCards = () => {
               key={i}
             >
               <div className='h-[80%]'>
-                <div className='absolute left-3 top-3'>
-                  <span className='center inline-block h-9 w-9 rounded-full bg-[#DB3636] text-[12px]  md:text-sm font-medium  text-white md:h-12  md:w-12 md:font-medium'>
-                    -50%
-                  </span>{' '}
-                </div>
+                {item.sale && (
+                  <div className='absolute left-3 top-3'>
+                    <span className='center inline-block h-9 w-9 rounded-full bg-[#DB3636] text-[12px]  font-medium text-white  md:h-12 md:w-12  md:text-sm md:font-medium'>
+                      -{item.sale}%
+                    </span>{' '}
+                  </div>
+                )}
+
                 <div className='center pt-5 '>
                   <div className='card_img relative'>
                     <Image
@@ -31,17 +34,30 @@ const BeefCards = () => {
                 <div className='pr-3'>
                   <p className=' title'>Beef meat is deledssfdf</p>
                 </div>
-                <div className='flex items-center'>
-                  <div className='center relative'>
-                    <p className='mr-1 text-[10px] text-[#F57171] md:text-sm'>
-                      12€/kg
+                {item.sale ? (
+                  <div className='flex items-center'>
+                    <div className='center relative'>
+                      <p className='mr-1 text-[10px] text-[#F57171] md:text-sm'>
+                      {item.price}€/kg
+                      </p>
+
+                      <span className='absolute bottom-[8px] left-0 h-[1px] bg-[#F57171] md:bottom-[11px]'>
+                        <p className='invisible text-[10px] md:text-sm'>
+                          {item.price}€/kg
+                        </p>
+                      </span>
+                    </div>
+
+                    <p className='title line-through-opacity-0'>
+                      
+                      {(item.price * (100 - item.sale)) / 100}€/kg
                     </p>
-                    <span className='absolute bottom-[8px] left-0 h-[1px] bg-[#F57171] md:bottom-[11px]'>
-                      <p className='invisible text-[10px] md:text-sm'>12€/kg</p>
-                    </span>
                   </div>
-                  <p className='title'>10€/kg</p>
-                </div>
+                ) : (
+                  <div className='flex items-center'>
+                    <p className='title'>{item.price}€/kg  </p>
+                  </div>
+                )}
               </div>
             </li>
           )
