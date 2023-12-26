@@ -20,9 +20,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             <Image layout='fill' src={logo} alt='logo' />
           </Link>
         </div>
-        <div className='mr-5 hidden sm:block'>
-          <p>Contact us via:</p>
-        </div>
+      
         <div className='center'>
           <div className='relative mr-2'>
             <Link href={`/${lang}`}>

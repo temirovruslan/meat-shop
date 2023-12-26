@@ -16,12 +16,7 @@ export default async function Home({
 
   return (
     <div className='mt-2 flex min-h-screen flex-col sm:mr-0'>
-      <div className='flex items-center pl-[100px] animate-bounce text-sm font-bold text-main sm:hidden  '>
-        <p>Contact us via</p>
-        <div className='relative ml-2'>
-          <Image width={17} height={17} src={arrow} alt='arrow' />
-        </div>
-      </div>
+      
       <div className='wrapper my-12 flex-1'>
         <div className='flex flex-col items-center justify-center'>
           <h1 className='change_font mb-12 text-[28px] font-bold text-main md:text-[45px]'>
