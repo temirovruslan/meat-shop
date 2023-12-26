@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import eng from '@/public/en.svg'
+import eng from '@/public/eng.svg'
 import rus from '@/public/rus.svg'
 import nor from '@/public/nor.svg'
 import est from '@/public/est.png'
@@ -53,7 +53,7 @@ export default function LocaleSwitcher() {
     }
   }, [])
   return (
-    <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className='center absolute right-10'>
+    <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className='center absolute right-0 sm:right-10'>
       <div className='relative flex gap-x-3'>
         <div>
           <Image

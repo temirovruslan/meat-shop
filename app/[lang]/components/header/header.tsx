@@ -2,15 +2,46 @@ import Link from 'next/link'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
-
+import Image from 'next/image'
+import logo from '@/public/logo.svg'
+import telegram from '@/public/telegram.svg'
+import instagram from '@/public/instagram.svg'
+import messanger from '@/public/messanger.svg'
+import whatsapp from '@/public/whatsapp.svg'
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='sticky right-0 top-0 z-50 bg-main py-6 text-white '>
-      <nav className='container flex items-center justify-between'>
-        <ul className='flex gap-x-8'>
+    <header className='sticky right-0 top-0 z-50 bg-main py-3 text-white '>
+      <div className='container flex items-center '>
+        <div className='relative mr-3 h-[70px] w-[70px] sm:mr-12'>
+          <Link href={`/${lang}`}>
+            <Image layout='fill' src={logo} alt='logo' />
+          </Link>
+        </div>
+        <div className='mr-5 hidden sm:block'>
+          <p>Contact us via:</p>
+        </div>
+        <div className='center'>
+          <div className='relative mr-2'>
+            <Link href={`/${lang}`}>
+              <Image width={35} height={35} src={telegram} alt='logo' />
+            </Link>
+          </div>
+          <div className='relative mr-2'>
+            <Link href={`/${lang}`}>
+              <Image width={35} height={35} src={instagram} alt='logo' />
+            </Link>
+          </div>
+
+          <div className='relative'>
+            <Link href={`/${lang}`}>
+              <Image width={35} height={35} src={whatsapp} alt='logo' />
+            </Link>
+          </div>
+        </div>
+        {/* <ul className='flex gap-x-8'>
           <li>
             <Link href={`/${lang}`}>{navigation.home}</Link>
           </li>
@@ -20,10 +51,9 @@ export default async function Header({ lang }: { lang: Locale }) {
           <li>
             <Link href={`/${lang}/beef`}>Beef</Link>
           </li>
-        </ul>
+        </ul> */}
         <LocaleSwitcher />
-      
-      </nav>
+      </div>
     </header>
   )
 }
