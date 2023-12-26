@@ -13,7 +13,7 @@ const BeefCards = () => {
             >
               <div className='h-[80%]'>
                 <div className='absolute left-3 top-3'>
-                  <span className='center inline-block h-12 w-12 rounded-full bg-[#DB3636]  font-medium text-white'>
+                  <span className='center inline-block h-9 w-9 rounded-full bg-[#DB3636] text-[12px]  md:text-sm font-medium  text-white md:h-12  md:w-12 md:font-medium'>
                     -50%
                   </span>{' '}
                 </div>
@@ -27,22 +27,20 @@ const BeefCards = () => {
                   </div>
                 </div>
               </div>
-              <div className='z-10 flex h-[20%] items-center justify-between rounded-b-2xl bg-[#913B33] pl-9  pr-5 text-[#ffffff]'>
+              <div className='z-10 flex h-[20%] items-center justify-between rounded-b-2xl bg-[#913B33] px-3 text-[#ffffff]'>
                 <div className='pr-3'>
-                  <p className='text-[18px] font-semibold'>
-                    Beef meat is delicios 
-                  </p>
+                  <p className=' title'>Beef meat is deledssfdf</p>
                 </div>
-                <div className='flex'>
-                  <div className='relative flex'>
-                    <p className='mr-4 mt-[2.5px] text-sm text-[#F57171]'>
+                <div className='flex items-center'>
+                  <div className='center relative'>
+                    <p className='mr-1 text-[10px] text-[#F57171] md:text-sm'>
                       12€/kg
                     </p>
-                    <span className='absolute bottom-[13px] left-0 h-[1px] bg-[#F57171]'>
-                      <p className='invisible'>12€/kg</p>
+                    <span className='absolute bottom-[8px] left-0 h-[1px] bg-[#F57171] md:bottom-[11px]'>
+                      <p className='invisible text-[10px] md:text-sm'>12€/kg</p>
                     </span>
                   </div>
-                  <p className='text-[18px] font-semibold'>10€/kg</p>
+                  <p className='title'>10€/kg</p>
                 </div>
               </div>
             </li>

@@ -24,7 +24,7 @@ body {
   grid-column-gap: 0px;
   justify-items: center;
   align-items: center;
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -35,37 +35,52 @@ body {
 .card {
   color: rgb(33, 30, 30);
   font-weight: 600;
-  height: 300px;
-  width: 400px;
-  /* @media (min-width: 1000px) {
-    height: 240px;
-    width: 380px;
+
+  width: 270px;
+  height: 180px;
+  @media (min-width: 420px) {
+    width: 300px;
+    height: 200px;
   }
-  @media (min-width: 1455px) {
-  
-    height: 300px;
-    width: 420px;
-  } */
+  @media (min-width: 768px) {
+    width: 320px;
+    height: 200px;
+  }
+  @media (min-width: 1000px) {
+    width: 350px;
+    height: 250px;
+  }
+  .title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.1;
+    @media (min-width: 420px) {
+      /* font-weight: 500; */
+      font-size: 14px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    @media (min-width: 1000px) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
 }
 .card_img {
-  width: 260px;
-  height: 180px;
-  /* @media (min-width: 1000px) {
+  width: 170px;
+  height: 110px;
+  @media (min-width: 420px) {
+    width: 200px;
+    height: 120px;
+  }
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 130px;
+  }
+  @media (min-width: 1000px) {
     width: 240px;
     height: 140px;
-  } */
-}
-.visible-span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 2px;
-  background-color: black;
-  opacity: 1; /* Set opacity to 1 to make the span fully visible */
-}
-
-.invisible-text {
-  position: absolute;
-  left: -9999px; /* Move the text out of the viewport */
-  opacity: 0; /* Set opacity to 0 to make the text invisible */
+  }
 }
