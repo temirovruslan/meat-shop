@@ -8,15 +8,15 @@ import nor from '@/public/nor.png'
 import est from '@/public/est.png'
 import { i18n } from '@/i18n.config'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 
-const flagImages = {
+const flagImages: { [key: string]: StaticImageData } = {
   en: eng,
   ru: rus,
   no: nor,
   ee: est
-}
+};
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
@@ -44,7 +44,7 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <div className='flex gap-x-3'>
+    <div className='flex gap-x-3 relative'>
       <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className=''>
         <Image
           width={40}
@@ -54,7 +54,7 @@ export default function LocaleSwitcher() {
         />
       </button>
       {isDropdownOpen && (
-        <ul className='absolute left-0 top-full mt-2 space-y-2 rounded-md bg-gray-800 p-2'>
+        <ul className='absolute right-0 top-full mt-2 space-y-2 rounded-md bg-gray-800 p-2'>
           {i18n.locales.map(locale => (
             <li key={locale}>
               <button onClick={() => handleChangeLocale(locale)}>
