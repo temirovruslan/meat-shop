@@ -13,9 +13,11 @@ body {
 }
 
 .wrapper {
+ 
   max-width: 1330px;
   padding: 0 25px 0 25px;
   margin: auto;
+ 
 }
 .center {
   display: flex;

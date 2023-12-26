@@ -4,6 +4,7 @@ import Image from 'next/image'
 import cow from '@/public/cow.webp'
 import sheep from '@/public/sheep.webp'
 import Link from 'next/link'
+import Footer from './components/Footer'
 
 export default async function Home({
   params: { lang }
@@ -13,36 +14,38 @@ export default async function Home({
   const { page } = await getDictionary(lang)
 
   return (
-    <div className=''>
-      <div className='wrapper'>
+    <div className='flex min-h-screen flex-col'>
+      <div className='wrapper my-12 flex-1'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='change_font my-12 text-[45px] font-bold text-main'>
+          <h1 className='change_font mb-12 text-[28px] font-bold text-main md:text-[45px]'>
             Select the product
           </h1>
 
-          <div>
-            <h2 className='change_font  pr-24 text-right text-[30px] font-bold text-main'>
+          <div className=''>
+            <h2 className='change_font center text-[22px] font-bold text-main md:text-[29px] '>
               Beef cuts
             </h2>
             <Link href={`/${lang}/beef`}>
-              <button className='relative mb-12  h-[280px] w-[430px] transform transition-transform duration-300 hover:scale-110'>
-                <Image src={cow} layout='fill' alt='Cow' />
+              <button className='relative mb-12 transform transition-transform duration-300 hover:scale-110'>
+                <Image src={cow} width={430} height={280} alt='Cow' />
               </button>
             </Link>
           </div>
 
-          <div>
-            <h2 className='change_font pb-4 pr-16 text-right text-[29px] font-bold text-main'>
+          <div className='px-10'>
+            <h2 className='change_font center pb-4 text-[21px] font-bold text-main md:text-[29px]'>
               Sheep cuts
             </h2>
             <Link href={`/${lang}/sheep`}>
-              <button className='relative h-[260px] w-[333px] transform transition-transform duration-300 hover:scale-110'>
-                <Image src={sheep} layout='fill' alt='Sheep' />
+              <button className='relative transform transition-transform duration-300 hover:scale-110'>
+                <Image src={sheep} height={260} width={333} alt='Sheep' />
               </button>
             </Link>
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
