@@ -25,22 +25,22 @@ export const beef: lambType[] = [
   {
     price: 15,
     name: 'Beef Chunk',
-    image: img_2.src
+    image: img_1.src
   },
   {
     price: 15,
     name: 'Beef Chunk',
-    image: img_3.src
+    image: img_1.src
   },
   {
     price: 15,
     name: 'Beef Chunk',
-    image: img_4.src
+    image: img_1.src
   },
   {
     price: 15,
     name: 'Beef Chunk',
-    image: img_5.src
+    image: img_1.src
   },
   {
     price: 15,

@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header/header'
 
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { Open_Sans } from 'next/font/google'
+const inter = Open_Sans({  subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',

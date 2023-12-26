@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: '#0F492D'
+        main: '#181A18',
+        sec: '#EBFFD8',
+        darkGreen: '#32773D',
+        pinkLight: '#D5BCBC'
       },
       container: {
         center: true,

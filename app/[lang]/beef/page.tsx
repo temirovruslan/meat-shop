@@ -10,10 +10,10 @@ export default async function Beef({
   const { page } = await getDictionary(lang)
 
   return (
-
-      <div className='container my-10 md:my-24'>
+    <div className='wrapper'>
+    
         <BeefCards />
-      </div>
-  
+      
+    </div>
   )
 }

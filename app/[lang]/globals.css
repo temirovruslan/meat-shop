@@ -8,7 +8,64 @@ body {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1330px;
   padding: 0 25px 0 25px;
   margin: auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 0px;
+  justify-items: center;
+  align-items: center;
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  color: rgb(33, 30, 30);
+  font-weight: 600;
+  height: 300px;
+  width: 400px;
+  /* @media (min-width: 1000px) {
+    height: 240px;
+    width: 380px;
+  }
+  @media (min-width: 1455px) {
+  
+    height: 300px;
+    width: 420px;
+  } */
+}
+.card_img {
+  width: 260px;
+  height: 180px;
+  /* @media (min-width: 1000px) {
+    width: 240px;
+    height: 140px;
+  } */
+}
+.visible-span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background-color: black;
+  opacity: 1; /* Set opacity to 1 to make the span fully visible */
+}
+
+.invisible-text {
+  position: absolute;
+  left: -9999px; /* Move the text out of the viewport */
+  opacity: 0; /* Set opacity to 0 to make the text invisible */
 }
