@@ -15,27 +15,27 @@ export default async function Header({ lang }: { lang: Locale }) {
   return (
     <header className='sticky right-0 top-0 z-50 bg-main py-3 text-white '>
       <div className='container flex items-center '>
-        <div className='relative mr-3 h-[70px] w-[70px] sm:mr-12'>
+        <div className='relative mr-3 h-[70px] w-[70px] sm:mr-12 rounded-full'>
           <Link href={`/${lang}`}>
             <Image layout='fill' src={logo} alt='logo' />
           </Link>
         </div>
       
         <div className='center'>
-          <div className='relative mr-2'>
+          <div className='relative mr-2 rounded-full'>
             <Link href={`/${lang}`}>
-              <Image width={35} height={35} src={telegram} alt='logo' />
+              <Image width={35} height={35} src={telegram} alt='telegram' />
             </Link>
           </div>
-          <div className='relative mr-2'>
+          <div className='relative mr-2 rounded-full'>
             <Link href={`/${lang}`}>
-              <Image width={35} height={35} src={instagram} alt='logo' />
+              <Image width={35} height={35} src={instagram} alt='instagram' />
             </Link>
           </div>
 
-          <div className='relative'>
+          <div className='relative rounded-full'>
             <Link href={`/${lang}`}>
-              <Image width={35} height={35} src={whatsapp} alt='logo' />
+              <Image width={35} height={35} src={whatsapp} alt='whatsapp' />
             </Link>
           </div>
         </div>

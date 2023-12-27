@@ -13,11 +13,9 @@ body {
 }
 
 .wrapper {
- 
   max-width: 1330px;
   padding: 0 25px 0 25px;
   margin: auto;
- 
 }
 .center {
   display: flex;
@@ -89,5 +87,14 @@ body {
   @media (min-width: 1000px) {
     width: 210px;
     height: 130px;
+  }
+}
+.text-size {
+  font-size: 14px;
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 16px;
   }
 }

@@ -53,15 +53,13 @@ export default function LocaleSwitcher() {
     }
   }, [])
   return (
-    <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className='center absolute right-0 sm:right-10'>
+    <button
+      onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+      className='center absolute right-0 sm:right-10 rounded-full'
+    >
       <div className='relative flex gap-x-3'>
-        <div>
-          <Image
-            width={40}
-            height={20}
-            src={flagImages[selectedLocale]}
-            alt='flag'
-          />
+        <div className='relative h-[25px] w-[45px] md:h-[30px] md:w-[55px]'>
+          <Image layout='fill' src={flagImages[selectedLocale]} alt='flag' />
         </div>
         {isDropdownOpen && (
           <ul className='absolute right-0 top-full mt-2 space-y-2 rounded-md bg-gray-800 p-2'>
@@ -82,7 +80,7 @@ export default function LocaleSwitcher() {
           </ul>
         )}
       </div>
-      <div className={`relative ${isDropdownOpen && 'rotate-180'}`}>
+      <div className={`relative ml-[-5px] ${isDropdownOpen && 'rotate-180'}`}>
         <Image width={35} height={30} alt='arrow' src={arrow} />
       </div>
     </button>
