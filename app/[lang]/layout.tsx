@@ -3,8 +3,13 @@ import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header/header'
 
-import { Open_Sans } from 'next/font/google'
+import { Open_Sans, Alkatra } from 'next/font/google'
 const inter = Open_Sans({ subsets: ['latin'] })
+const alkatra = Alkatra({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-alkatra'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',

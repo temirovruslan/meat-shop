@@ -20,7 +20,7 @@ export default async function Footer({
           <div className='grid grid-cols-1 lg:grid-cols-3'>
             <div>
            
-              <h3 className='mb-3 mr-0 text-base font-bold sm:text-lg lg:mr-16'>
+              <h3 className='mb-3 mr-0 text-base font-bold sm:text-lg lg:mr-16 font-sans'>
                 Order by sending us a message on our social media:
               </h3>
               <div className='mb-5 flex lg:mb-0'>

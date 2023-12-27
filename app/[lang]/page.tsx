@@ -19,12 +19,12 @@ export default async function Home({
       
       <div className='wrapper my-12 flex-1'>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='change_font mb-12 text-[28px] font-bold text-main md:text-[45px]'>
+          <h1 className='mb-12 text-[28px] font-bold text-main md:text-[45px]'>
             Select the product
           </h1>
 
           <div className=''>
-            <h2 className='change_font center text-[22px] font-bold text-main md:text-[29px] '>
+            <h2 className='change_font center pb-4 text-[21px] font-bold text-main md:text-[29px]'>
               Beef cuts
             </h2>
             <Link href={`/${lang}/beef`}>
@@ -35,7 +35,7 @@ export default async function Home({
           </div>
 
           <div className='px-10'>
-            <h2 className='change_font center pb-4 text-[21px] font-bold text-main md:text-[29px]'>
+            <h2 className='change_font center pb-4 text-[20px] font-bold text-main md:text-[29px]'>
               Sheep cuts
             </h2>
             <Link href={`/${lang}/sheep`}>
