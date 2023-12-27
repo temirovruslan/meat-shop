@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
 
 button,
@@ -72,10 +71,10 @@ body {
       font-size: 16px;
       font-weight: 500;
     }
-    @media (min-width: 1000px) {
+    /* @media (min-width: 1000px) {
       font-size: 18px;
       font-weight: 600;
-    }
+    } */
   }
 }
 .card_img {
@@ -101,5 +100,14 @@ body {
   }
   @media (min-width: 1000px) {
     font-size: 16px;
+  }
+}
+.heading-size {
+  font-size: 20px;
+  @media (min-width: 768px) {
+    font-size: 23px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 25px;
   }
 }

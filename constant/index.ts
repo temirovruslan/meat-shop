@@ -1,4 +1,4 @@
-import { lambType } from '@/types'
+import { beefType, lambType } from '@/types'
 import img_1 from '/public/beef_meat1.webp'
 import img_2 from '/public/beef_meat2.webp'
 import img_3 from '/public/beef_meat3.webp'
@@ -10,13 +10,40 @@ import img_8 from '/public/beef_meat8.webp'
 
 export const lamb: lambType[] = [
   {
-    price: 15,
-    name: 'Beef Chunk',
-    image: img_1.src
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_2.src
+  },
+  {
+    sale: 55,
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_2.src
+  },
+  {
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_2.src
+  },
+  {
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_3.src
+  },
+  {
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_7.src
+  },
+  {
+    sale: 23,
+    price: 8,
+    name: 'Lamb Chunk',
+    image: img_8.src
   }
 ]
 
-export const beef: lambType[] = [
+export const beef: beefType[] = [
   {
     price: 15,
     name: 'Beef Chunk',

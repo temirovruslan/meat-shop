@@ -1,11 +1,11 @@
-import { beef } from '@/constant'
+import { beefType } from '@/types'
 import Image from 'next/image'
 
-const BeefCards = () => {
+const Cards: React.FC<{ data: beefType[] }> = ({ data }) => {
   return (
     <ul className='cards my-12 rounded-2xl bg-[#D6E3E9] py-8'>
-      {beef &&
-        beef.map((item, i) => {
+      {data &&
+        data.map((item, i) => {
           return (
             <li
               className='card relative flex h-[300px] flex-col rounded-2xl bg-white'
@@ -32,12 +32,12 @@ const BeefCards = () => {
               </div>
               <div className='z-10 flex h-[20%] items-center justify-between rounded-b-2xl bg-main px-3 text-[#ffffff]'>
                 <div className='pr-3'>
-                  <p className=' title'>Beef meat is deledssfdf </p>
+                  <p className=' title'>{item.name.toUpperCase()}</p>
                 </div>
                 {item.sale ? (
                   <div className='flex items-center'>
                     <div className='center relative'>
-                      <p className='mr-1 text-[10px] text-[#F57171] md:text-sm'>
+                      <p className='mr-1 text-[10px] text-[#DB3636] md:text-sm'>
                         {item.price}€/kg
                       </p>
 
@@ -65,4 +65,4 @@ const BeefCards = () => {
   )
 }
 
-export default BeefCards
+export default Cards

@@ -1,6 +1,8 @@
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
-import BeefCards from '../components/BeefCards'
+import Footer from '../components/Footer'
+import { beef } from '@/constant'
+import Cards from '../components/Cards'
 
 export default async function Beef({
   params: { lang }
@@ -10,10 +12,11 @@ export default async function Beef({
   const { page } = await getDictionary(lang)
 
   return (
-    <div className='wrapper'>
-    
-        <BeefCards />
-      
+    <div className='flex h-screen flex-col'>
+      <div className=' flex-1'>
+        <div className='wrapper'>{beef && <Cards data={beef} />}</div>
+      </div>
+      <Footer params={{ lang }} />
     </div>
   )
 }

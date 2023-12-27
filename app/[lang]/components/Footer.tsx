@@ -14,13 +14,12 @@ export default async function Footer({
 }) {
   const { page } = await getDictionary(lang)
   return (
-    <div className='w-full bg-main text-white mt-12'>
+    <div className='mt-12 w-full bg-main text-white'>
       <div className='container h-full py-5'>
         <div className='center'>
           <div className='grid grid-cols-1 lg:grid-cols-3'>
             <div>
-           
-              <h3 className='mb-3 mr-0 text-base font-bold sm:text-lg lg:mr-16 font-sans'>
+              <h3 className='mb-3 mr-0 font-sans text-base font-bold sm:text-lg lg:mr-16'>
                 Order by sending us a message on our social media:
               </h3>
               <div className='mb-5 flex lg:mb-0'>
@@ -63,27 +62,27 @@ export default async function Footer({
               </h3>
               <ul className='flex flex-col '>
                 <li className='mb-2 '>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/order-info`}>
                     HOW TO ORDER
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/order-info`}>
                     DELIVERY DETAILS
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/order-info`}>
                     PAYMENT OPTIONS
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/order-info`}>
                     Free delivery on Saturdays across Estonia
                   </Link>
                 </li>
                 <li>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/order-info`}>
                     Delivery cost 5 euro
                   </Link>
                 </li>
@@ -95,22 +94,22 @@ export default async function Footer({
               </h3>
               <ul>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/useful-links`}>
                     How we cut the animals
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/useful-links`}>
                     DELIVERY DETAILS
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/useful-links`}>
                     About us
                   </Link>
                 </li>
                 <li className='mb-2'>
-                  <Link className='text-size' href={`/${lang}`}>
+                  <Link className='text-size' href={`/${lang}/useful-links`}>
                     Certificate halal
                   </Link>
                 </li>
