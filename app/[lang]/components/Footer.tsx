@@ -14,7 +14,7 @@ export default async function Footer({
 }) {
   const { page } = await getDictionary(lang)
   return (
-    <div className='w-full bg-main text-white '>
+    <div className='w-full bg-main text-white mt-12'>
       <div className='container h-full py-5'>
         <div className='center'>
           <div className='grid grid-cols-1 lg:grid-cols-3'>
