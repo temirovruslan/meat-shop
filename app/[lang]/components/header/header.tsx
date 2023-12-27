@@ -23,7 +23,7 @@ export default async function Header({ lang }: { lang: Locale }) {
       
         <div className='center'>
           <div className='relative mr-2 rounded-full'>
-            <Link href={`/${lang}`}>
+            <Link  href={`/${lang}`}>
               <Image width={35} height={35} src={telegram} alt='telegram' />
             </Link>
           </div>

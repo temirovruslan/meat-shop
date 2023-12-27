@@ -54,6 +54,7 @@ export default function LocaleSwitcher() {
   }, [])
   return (
     <button
+    style={{ WebkitTapHighlightColor: 'transparent' }}
       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       className='center absolute right-0 sm:right-10 rounded-full'
     >

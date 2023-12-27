@@ -19,7 +19,8 @@ export default async function Footer({
         <div className='center'>
           <div className='grid grid-cols-1 lg:grid-cols-3'>
             <div>
-              <h3 className='mb-3 text-base font-bold sm:text-lg'>
+           
+              <h3 className='mb-3 mr-0 text-base font-bold sm:text-lg lg:mr-16'>
                 Order by sending us a message on our social media:
               </h3>
               <div className='mb-5 flex lg:mb-0'>
@@ -56,7 +57,7 @@ export default async function Footer({
                 </div>
               </div>
             </div>
-            <div className='mb-5 lg:mb-0'>
+            <div className='mb-5 pr-0 lg:mb-0 lg:pr-4'>
               <h3 className='mb-3 text-base font-bold sm:text-lg'>
                 ORDERING INFORMATION
               </h3>
@@ -89,7 +90,9 @@ export default async function Footer({
               </ul>
             </div>
             <div>
-              <h3 className='mb-3 text-base font-bold sm:text-lg'>USEFUL LINKS</h3>
+              <h3 className='mb-3 text-base font-bold sm:text-lg'>
+                USEFUL LINKS
+              </h3>
               <ul>
                 <li className='mb-2'>
                   <Link className='text-size' href={`/${lang}`}>
@@ -106,10 +109,15 @@ export default async function Footer({
                     About us
                   </Link>
                 </li>
-                <li>
+                <li className='mb-2'>
                   <Link className='text-size' href={`/${lang}`}>
                     Certificate halal
                   </Link>
+                </li>
+                <li>
+                  <p className='text-size font-semibold'>
+                    ©2024 Halal-EESTI All Rights Reserved
+                  </p>
                 </li>
               </ul>
             </div>
