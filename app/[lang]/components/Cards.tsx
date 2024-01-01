@@ -11,17 +11,24 @@ const Cards: React.FC<{ data: beefType[] }> = ({ data }) => {
               className='card relative flex h-[300px] flex-col rounded-2xl bg-white'
               key={i}
             >
-              <div className='h-[80%]'>
+              <div className='h-[80%] center'>
                 {item.sale && (
                   <div className='absolute left-3 top-3'>
                     <span className='center inline-block h-9 w-9 rounded-full bg-[#DB3636] text-[12px]  font-medium text-white  md:h-12 md:w-12  md:text-sm md:font-medium'>
                       -{item.sale}%
-                    </span>{' '}
+                    </span>
                   </div>
                 )}
 
-                <div className='center pt-5 '>
-                  <div className='card_img relative'>
+                <div className='center'>
+                  <div
+                    className={
+                      item.size === 'circle' ? 'circle__size' :
+                      item.size === 'wide' ? 'wide__size' :
+                      item.size === 'high' ? 'high__size' :
+                      'usual__size'
+                    }
+                  >
                     <Image
                       src={item.image}
                       layout='fill'

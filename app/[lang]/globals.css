@@ -45,7 +45,7 @@ body {
   color: rgb(33, 30, 30);
   font-weight: 600;
 
-  width: 270px;
+  width: 250px;
   height: 180px;
   @media (min-width: 420px) {
     width: 300px;
@@ -71,13 +71,45 @@ body {
       font-size: 16px;
       font-weight: 500;
     }
-    /* @media (min-width: 1000px) {
-      font-size: 18px;
-      font-weight: 600;
-    } */
+  
   }
 }
-.card_img {
+.wide__size{
+  position: relative;
+  width: 180px;
+  height: 100px;
+  @media (min-width: 420px) {
+    width: 180px;
+    height: 100px;
+  }
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 110px;
+  }
+  @media (min-width: 1000px) {
+    width: 240px;
+    height: 130px;
+  }
+}
+.high__size {
+  position: relative;
+  width: 100px;
+  height: 125px;
+  @media (min-width: 420px) {
+    width: 105px;
+    height: 135px;
+  }
+  @media (min-width: 768px) {
+    width: 115px;
+    height: 155px;
+  }
+  @media (min-width: 1000px) {
+    width: 135px;
+    height: 175px;
+  }
+}
+.usual__size {
+  position: relative;
   width: 140px;
   height: 100px;
   @media (min-width: 420px) {
@@ -93,6 +125,24 @@ body {
     height: 130px;
   }
 }
+.circle__size {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  @media (min-width: 420px) {
+    width: 140px;
+    height: 110px;
+  }
+  @media (min-width: 768px) {
+    width: 160px;
+    height: 120px;
+  }
+  @media (min-width: 1000px) {
+    width: 190px;
+    height: 150px;
+  }
+}
+
 .text-size {
   font-size: 14px;
   @media (min-width: 768px) {
