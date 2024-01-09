@@ -38,99 +38,82 @@ import head_lamb from '@/public/lamb/head.webp'
 
 export const lamb: lambType[] = [
   {
-    price: 8,
+    price: 14.69,
     name: 'Shank',
     image: shank_lamb.src,
     size: 'wide'
   },
   {
-    sale: 55,
     price: 8,
     name: 'Rib Steak',
     image: rib_steak_lamb.src,
     size: 'wide'
   },
   {
-    sale: 55,
-    price: 8,
-    name: 'leg',
+    price: 11,
+    name: 'leg boneless',
     image: leg_lamb.src,
     size: 'wide'
   },
   {
-    sale: 55,
-    price: 8,
+    price: 25,
     name: 'flank',
     image: flank_lamb.src,
     size: 'wide'
   },
+
   {
-    sale: 55,
-    price: 8,
-    name: 'leg',
-    image: breast_lamb.src,
-    size: 'wide'
-  },
-  {
-    price: 8,
-    name: 'leg',
-    image: leg_lamb.src,
-    size: 'wide'
-  },
-  {
-    price: 8,
+    price: 20,
     name: 'loin',
     image: loin_lamb.src
     // size: 'wide'
   },
   {
-    price: 8,
+    price: 18,
     name: 'sirloin',
     image: sirloin_lamb.src,
     size: 'wide'
   },
   {
-    price: 8,
+    price: 14.64,
     name: 'neck',
     image: neck_lamb.src
     // size: 'wide'
   },
   {
-    sale: 55,
-    price: 8,
+   
+    price: 10,
     name: 'shoulder',
     image: shoulder_lamb.src,
     size: 'circle'
   },
   {
-    sale: 55,
-    price: 8,
+    price: 5,
     name: 'lungs',
     image: lungs_lamb.src
     // size: 'wide'
   },
   {
-    sale: 55,
-    price: 8,
+    price: 5,
     name: 'heart',
     image: heart_lamb.src
   },
   {
-    sale: 55,
+  
     price: 8,
     name: 'liver',
     image: liver_lamb.src
   },
 
   {
-    price: 15,
+    price: 8,
     name: 'Minced Meat lamb',
     image: minced_meat_beef.src,
     size: 'wide'
   },
 
   {
-    price: 15,
+    price: 4,
     name: 'head',
     image: head_lamb.src,
     size: 'circle'
@@ -139,20 +122,18 @@ export const lamb: lambType[] = [
 
 export const beef: beefType[] = [
   {
-    price: 15,
+    price: 15.79,
     name: 'Brisket',
     image: brisket_beef.src
   },
   {
-    sale: 90,
     price: 15,
     name: 'Round',
     image: round_beef.src,
     size: 'wide'
   },
   {
-    sale: 90,
-    price: 15,
+    price: 14.69,
     name: 'rump',
     image: rump_beef.src,
     size: ''
@@ -170,13 +151,13 @@ export const beef: beefType[] = [
     size: 'high'
   },
   {
-    price: 15,
+    price: 8,
     name: 'Minced Meat beef',
     image: minced_meat_beef.src,
     size: 'wide'
   },
   {
-    price: 15,
+    price: 11.29,
     name: 'Flank',
     image: flank_beef.src,
     size: 'wide'
@@ -188,31 +169,29 @@ export const beef: beefType[] = [
   },
 
   {
-    price: 15,
+    price: 24.34,
     name: 'T-bone steak',
     image: t_bone_steak_beef.src
   },
 
   {
-    sale: 90,
+   
     price: 15,
     name: 'Legs',
     image: legs_beef.src
   },
   {
-    sale: 90,
     price: 15,
     name: 'Liver',
     image: liver_beef.src,
     size: 'wide'
   },
   {
-    sale: 90,
-    price: 15,
+    price: 25,
     name: 'Tri Tip Roast',
     image: tri_tip_roast_beef.src
   },
- 
+
   {
     price: 8,
     name: 'head',
@@ -220,7 +199,7 @@ export const beef: beefType[] = [
     size: 'circle'
   },
   {
-    price: 8,
+    price: 4.15,
     name: 'heart',
     image: heart_beef.src
   }

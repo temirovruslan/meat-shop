@@ -39,17 +39,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             </Link>
           </div>
         </div>
-        {/* <ul className='flex gap-x-8'>
-          <li>
-            <Link href={`/${lang}`}>{navigation.home}</Link>
-          </li>
-          <li>
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
-          </li>
-          <li>
-            <Link href={`/${lang}/beef`}>Beef</Link>
-          </li>
-        </ul> */}
+    
         <LocaleSwitcher />
       </div>
     </header>
