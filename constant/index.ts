@@ -163,7 +163,7 @@ export const beef: beefType[] = [
     size: 'wide'
   },
   {
-    price: 15,
+    price: 10,
     name: 'Plate ribs',
     image: plate_ribs_beef.src
   },
@@ -176,7 +176,7 @@ export const beef: beefType[] = [
 
   {
    
-    price: 15,
+    price: 6,
     name: 'Legs',
     image: legs_beef.src
   },
