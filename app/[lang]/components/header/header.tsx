@@ -23,7 +23,7 @@ export default async function Header({ lang }: { lang: Locale }) {
       
         <div className='center'>
           <div className='relative mr-2 rounded-full'>
-            <Link  href={`/${lang}`}>
+          <Link href={`https://t.me/elbrus_halal`} target="_blank" rel="noopener noreferrer">
               <Image width={35} height={35} src={telegram} alt='telegram' />
             </Link>
           </div>
@@ -34,7 +34,7 @@ export default async function Header({ lang }: { lang: Locale }) {
           </div>
 
           <div className='relative rounded-full'>
-            <Link href={`/${lang}`}>
+          <Link href={`https://wa.me/37253423544`} target="_blank" rel="noopener noreferrer">
               <Image width={35} height={35} src={whatsapp} alt='whatsapp' />
             </Link>
           </div>
