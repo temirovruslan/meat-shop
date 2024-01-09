@@ -24,7 +24,7 @@ export default async function Footer({
               </h3>
               <div className='mb-5 flex lg:mb-0'>
                 <div className='relative mr-2 rounded-full'>
-                  <Link href={`/${lang}`}>
+                  <Link href={`https://t.me/elbrus_halal`} target="_blank" rel="noopener noreferrer">
                     <Image
                       width={35}
                       height={35}
@@ -45,7 +45,7 @@ export default async function Footer({
                 </div>
 
                 <div className='relative rounded-full'>
-                  <Link href={`/${lang}`}>
+                  <Link href={`https://wa.me/37253423544`} target="_blank" rel="noopener noreferrer">
                     <Image
                       width={35}
                       height={35}
