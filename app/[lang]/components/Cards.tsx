@@ -13,7 +13,7 @@ const Cards: React.FC<{ data: beefType[] }> = ({ data }) => {
             >
               <div className='h-[80%] center'>
                 {item.sale && (
-                  <div className='absolute left-3 top-3'>
+                  <div className='absolute right-3 top-3 z-10'>
                     <span className='center inline-block h-9 w-9 rounded-full bg-[#DB3636] text-[12px]  font-medium text-white  md:h-12 md:w-12  md:text-sm md:font-medium'>
                       -{item.sale}%
                     </span>
