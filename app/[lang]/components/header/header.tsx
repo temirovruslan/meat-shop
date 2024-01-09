@@ -28,7 +28,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             </Link>
           </div>
           <div className='relative mr-2 rounded-full'>
-            <Link href={`/${lang}`}>
+          <Link href={`https://www.instagram.com/elbrus_halal?igsh=dnRybGIzbzdnaDV0`} target="_blank" rel="noopener noreferrer">
               <Image width={35} height={35} src={instagram} alt='instagram' />
             </Link>
           </div>
